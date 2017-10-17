@@ -50,6 +50,12 @@ app.get('/error',(req,res)=>{
     status: ' error occured',
   })
 })
+
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    PageTitle : "This is Project Page"
+  })
+})
 app.listen(port,()=>{
   console.log(`Server is up on Port: ${port}`);
 });
